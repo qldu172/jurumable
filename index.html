@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>주루마블 - 유진 에디션</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div id="game-container">
+
+  <div id="board">
+    <img src="images/board_bg.png" id="background">
+    <div id="tiles">
+      <div class="tile-wrapper" style="left: 50px; top: 50px;">
+        <img src="images/tile_blank_1.png" class="tile">
+        <div class="tile-text">여기에 너가 적을 글</div>
+      </div>
+
+      <div class="tile-wrapper" style="left: 150px; top: 50px;">
+        <img src="images/tile_blank_2.png" class="tile">
+        <div class="tile-text">여기도 직접 적기</div>
+      </div>
+
+    </div>
+    <div id="players"></div>
+  </div>
+
+  <div id="control-panel">
+    <input type="text" id="player-name" placeholder="참가자 이름">
+    <button onclick="startGame()">게임 시작</button>
+    <button onclick="rollDice()">🎲 주사위 굴리기</button>
+  </div>
+
+  <div id="event-popup"></div>
+
+</div>
+
+</body>
+</html>

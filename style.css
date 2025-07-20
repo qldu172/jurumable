@@ -1,0 +1,55 @@
+
+body {
+  background-color: #222;
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+#game-container {
+  display: inline-block;
+}
+
+#board {
+  position: relative;
+  display: inline-block;
+}
+
+#background {
+  width: 800px;
+}
+
+#tiles, #players {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tile {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+.tile-text {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 60px;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  pointer-events: none;
+}
+
+.player-token {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: yellow;
+  border: 2px solid #f0c040;
+}
